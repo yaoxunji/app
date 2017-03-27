@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5">
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/a1"
+        android:id="@+id/lesson"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="查看记录"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="50dp"
+        />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/a2"
+        android:id="@+id/time"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="80dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="时间记录"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="190dp"
+
+        />
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/a3"
+        android:id="@+id/tu"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="图分析"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="380dp"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/a4"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="240dp"
+        android:id="@+id/wenzi"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="下步规划"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="380dp"
+        />
+
+
+</RelativeLayout>

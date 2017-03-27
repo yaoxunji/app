@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayout2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_time"
+        android:paddingLeft="4dp"
+        android:drawablePadding="10.0dip"
+        android:drawableLeft="@drawable/img_6"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:textColor="#ea5757"
+        android:text="2017/01/15"
+        android:background="#ffffff"
+        android:layout_alignTop="@+id/item_end"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_xiangmu"
+        android:textSize="30sp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:text="学习"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_xiangmu"
+        android:id="@+id/item_start"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#454444"
+        android:text="开始时间: 9"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_start"
+        android:id="@+id/item_end"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#454444"
+        android:text="结束时间: 10"
+
+        />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#928b8b"
+    >
+
+    <include layout="@layout/top"
+        android:id="@+id/include" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:background="@drawable/record_bg2">
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_time"
+        android:entries="@array/time"
+        android:layout_above="@+id/end_time"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/end_time"
+        android:entries="@array/time"
+        android:layout_marginBottom="185dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView18" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/xiangmu"
+        android:entries="@array/main"
+        android:layout_below="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="开始时间"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:id="@+id/textView18"
+        android:layout_alignBottom="@+id/start_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/start_time"
+        android:layout_toStartOf="@+id/start_time" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="结束时间"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/textView19"
+        android:layout_alignBottom="@+id/end_time"
+        android:layout_alignTop="@+id/end_time"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/end_time" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="分类"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/textView20"
+        android:layout_alignTop="@+id/xiangmu"
+        android:layout_alignBottom="@+id/xiangmu"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/xiangmu"
+        />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/xiangmu"
+        android:layout_alignParentBottom="true">
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/record_submit"
+            android:layout_width="196dp"
+            android:layout_height="64dp"
+            android:textColor="@color/cpb_white"
+            android:textSize="18sp"
+            app:cpb_cornerRadius="48dp"
+            app:cpb_iconComplete="@drawable/ic_action_accept"
+            app:cpb_iconError="@drawable/ic_action_cancel"
+            app:cpb_textIdle="@string/Baocun"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+       <!-- <Button
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#3590b7"
+            android:id="@+id/record_submit"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:text="修改"
+
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/button1"
+            android:id="@+id/record_update"
+            android:layout_marginTop="30dp"
+
+
+            />-->
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="当前日期"
+        android:textColor="#000000"
+        android:id="@+id/textView26"
+        android:layout_above="@+id/textView18"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/start_time" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/record_date"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignEnd="@+id/start_time"
+        android:layout_toEndOf="@+id/textView26" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

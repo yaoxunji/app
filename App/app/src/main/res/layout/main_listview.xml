@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c2bbbb">
+
+    <include layout="@layout/top" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/listview_change"
+            android:text="切换图显示" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_listview"
+        android:layout_below="@+id/listview_change">
+
+    </ListView>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/multiple_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            fab:fab_addButtonColorNormal="@color/blue_semi_transparent"
+            fab:fab_addButtonColorPressed="@color/white_pressed"
+            fab:fab_addButtonPlusIconColor="@color/white"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_title="添加记录"
+                fab:fab_colorPressed="@color/white_pressed"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_title="查看规划"
+                fab:fab_colorPressed="@color/white_pressed"/>
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+   </RelativeLayout>
+
+</RelativeLayout>

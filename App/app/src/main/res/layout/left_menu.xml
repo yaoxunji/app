@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbg1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout10"
+        android:layout_below="@+id/left_name"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_menu"
+            android:clickable="true"
+            android:id="@+id/R_layout1"
+            >
+
+            <ImageView
+                android:id="@+id/id_img1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/cxg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img1"
+                android:text="修改我的计划"
+                android:textColor="#ffffff"
+                android:textSize="23sp" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_menu"
+            android:clickable="true"
+            android:id="@+id/R_layout2"
+            >
+
+            <ImageView
+                android:id="@+id/id_img2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/cczhu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img2"
+                android:text="查看我的柱状图"
+                android:textColor="#ffffff"
+                android:textSize="23sp" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#9b9b9b"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_menu"
+            android:clickable="true"
+            android:id="@+id/R_layout3"
+            >
+
+            <ImageView
+                android:id="@+id/id_img3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ckz" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img3"
+                android:text="查看我的折线图"
+                android:textColor="#ffffff"
+                android:textSize="23sp" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#9b9b9b"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_menu"
+            android:clickable="true"
+            android:id="@+id/R_layout4"
+           >
+
+            <ImageView
+                android:id="@+id/id_img4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/cck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img4"
+                android:text="查看记录"
+                android:textColor="#ffffff"
+                android:textSize="23sp" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#9b9b9b"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick_menu"
+            android:clickable="true"
+            android:id="@+id/R_layout5"
+            >
+
+            <ImageView
+                android:id="@+id/id_img5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/cfx" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img5"
+                android:text="分享"
+                android:textColor="#ffffff"
+                android:textSize="23sp" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#9b9b9b"
+                />
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#9b9b9b"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="40sp"
+        android:clickable="false"
+        android:textColor="#ffffff"
+        android:id="@+id/left_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

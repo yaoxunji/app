@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0">
+
+    <include layout="@layout/update_zl_top"
+        android:id="@+id/include2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="输入邮箱"
+        android:textColor="#000000"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/top_relative"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/update_user_phonenumber"
+        android:textColor="#000000"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="输入手机号"
+        android:textColor="#000000"
+        android:id="@+id/textView23"
+        android:layout_above="@+id/update_user_phonenumber"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/update_user_email"
+        android:textColor="#000000"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="提交"
+        android:background="#3590b7"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/update_user_submit"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="返回"
+        android:background="#3590b7"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/update_user_finish"
+        android:layout_alignTop="@+id/update_user_submit"
+        android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

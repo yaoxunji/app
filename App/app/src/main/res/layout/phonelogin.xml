@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4">
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:background="#3590b7"
+        android:layout_height="50.0dip" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="验证码登录"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:background="@drawable/l2"
+        android:id="@+id/phonenumber"
+        android:layout_alignParentTop="true"
+        android:hint="   请输入您的手机号"
+        android:textColor="#000000"
+        android:textColorHint="#FFA1A1A1"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/l2"
+        android:id="@+id/code"
+        android:hint="   输入手机验证码"
+        android:textColor="#000000"
+        android:textColorHint="#FFA1A1A1"
+        android:layout_below="@+id/phonenumber"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignStart="@+id/phonenumber"
+        android:layout_toStartOf="@+id/getcode" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue"
+        android:text="获取验证码"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:onClick="getcode"
+        android:id="@+id/getcode"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@+id/code"
+        android:layout_alignParentEnd="true" />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/login"
+        android:layout_width="196dp"
+        android:layout_height="64dp"
+        android:textColor="@color/cpb_white"
+        android:textSize="18sp"
+        app:cpb_cornerRadius="48dp"
+        app:cpb_iconComplete="@drawable/ic_action_accept"
+        app:cpb_iconError="@drawable/ic_action_cancel"
+        app:cpb_textIdle="@string/Dengl"
+        android:layout_below="@+id/code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp" />
+</RelativeLayout>

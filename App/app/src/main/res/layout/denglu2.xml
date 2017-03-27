@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/denglu2_bg3"
+    android:gravity="center">
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="学习占总时间：41%"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/denglu2_study"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="34dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="活动占总时间：24%"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/denglu2_activity"
+            android:layout_below="@+id/denglu2_study"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="34dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="运动占总时间：20%"
+            android:gravity="center"
+            android:id="@+id/denglu2_sport"
+            android:layout_marginTop="34dp"
+            android:layout_below="@+id/denglu2_activity"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="娱乐占总时间：15%"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/denglu2_fun"
+            android:layout_below="@+id/denglu2_sport"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="34dp"
+            android:layout_alignParentEnd="true" />
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/bing_chart"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/denglu2_fun"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" >
+        </lecho.lib.hellocharts.view.PieChartView>
+
+    </RelativeLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+</RelativeLayout>
